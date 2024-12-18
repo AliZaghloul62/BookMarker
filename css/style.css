@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #F7ECDE;
+    height: 100%;
+}
+
+h1{
+    color: rgb(53, 46, 40);
+    font-family:"Pacifico",cursive ;
+    font-size: 50px;
+    position: relative;
+    z-index: 0;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+
+h1:hover::before{
+    height: 50%;
+}
+
+.bookmark{
+    border: dotted #352e28;
+    border-width:  2px 0 2px 0;
+    width: 100%;
+}
+
+h2{
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bookmark button{
+    color: white;
+    background-color: #d1512d;
+    border: #d1512d;
+    transition: .35s ease;
+}
+
+.bookmark button:hover{
+    color: white;
+    background-color: #bb4120;
+    border: #a03315;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
